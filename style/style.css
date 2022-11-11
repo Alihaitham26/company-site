@@ -261,6 +261,13 @@ h1,h2,h3,h4,h5,h6,h7{
   flex-direction: column;
   text-align: center;
 }
+.about .about-content .text p{
+  height: calc(100% - 0.3px);
+}
+.about .about-content .text p:first-of-type{
+  height: calc(100% - 0.3px);
+  display: flex;
+}
 .contact{
   padding: 20px 0;
   background-color: var(--primary-color)
