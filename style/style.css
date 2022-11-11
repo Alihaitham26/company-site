@@ -157,11 +157,10 @@ h1,h2,h3,h4,h5,h6,h7{
   color: var(--p-color);
 }
 .services-content{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 30px;
+  display: flex;
   padding: 20px auto;
   margin-top: 100px;
+  flex-wrap: wrap;
 }
 .services-content .srv{
   display: flex;
@@ -169,9 +168,10 @@ h1,h2,h3,h4,h5,h6,h7{
 }
 @media  (max-width: 767px){
   .services-content .srv{
-  flex-direction: column;
-  text-align: center;
-}
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
 }
 .services-content .srv i{
   color: var(--main-color);
